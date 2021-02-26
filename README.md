@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/LitRHap/self-wa/main/Gans/images (15).jpeg" width="230" height="230"/>
+<img src="https://raw.githubusercontent.com/LitRHap/self-wa/main/LitRHap/IMG-20210225-WA0563.jpg" width="230" height="230"/>
 </p>
 <p align="center">
 <a href="#"><img title="self-wa" src="https://img.shields.io/badge/Termux Whatsapp Bot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
