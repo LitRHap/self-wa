@@ -32,7 +32,7 @@ you've just cloned!!
 
 ### Usage
 ```bash
-> npm start
+> node index.js
 ```
 
 ### Info
