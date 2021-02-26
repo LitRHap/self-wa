@@ -39,3 +39,41 @@ you've just cloned!!
 ```
 prefix = z
 ```
+
+### Features
+
+| Sticker Creator |                Feature           |
+| :-----------: | :--------------------------------: |
+|       ✅       | Send Photo with Caption          |
+|       ✅       | Reply A Photo                    |
+|       ✅       | Reply A Video or GIF             |
+|       ✅       | Send Video or GIF with Caption   |
+|       ✅       | Reply A Sticker ( sticker to image ) |
+
+| Other  |                     Feature                     |
+| :------------: | :---------------------------------------------: |
+|       ✅        |   Get a random meme             |
+|       ✅        |   Text to speech                |
+|       ✅        |   Writing feature 				|
+|       ✅        |   What Anime Is This 			|
+|       ✅        |   Url2Img ( Screeenshot Web )   |
+|       ✅        |   Simsimi		                |
+
+| Group  |                     Feature               |
+| :-----------: | :--------------------------------: |
+|       ✅        |   Tagall/Mentionall member       |
+|       ✅        |   Kick Member Group	             |
+|       ✅        |   Add Member Group	             |
+|       ✅        |   Get List Admins Group          |
+
+| Owner Bot  |                     Feature           |
+| :-----------: | :--------------------------------: |
+|       ✅        |   Set Prefix                     |
+|       ✅        |   Broadcast                      |
+|       ✅        |   Clear All Chats                |
+
+### Special Thanks to
+* [`adiwajshing/Baileys`](https://github.com/adiwajshing/Baileys)
+* [`MitsuGans`](https://github.com/MitsuGans
+* [`Kevin David`]
+* [`Bang Garena`]bang OTP
