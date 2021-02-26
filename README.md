@@ -74,6 +74,9 @@ prefix = z
 
 ### Special Thanks to
 * [`adiwajshing/Baileys`](https://github.com/adiwajshing/Baileys)
-* [`MitsuGans`](https://github.com/MitsuGans
+* [`MitsuGans`](https://github.com/MitsuGans)
 * [`Kevin David`]
-* [`Bang Garena`]bang OTP
+* [`Bang Garena`]bang OTP nomor malay
+* [`LitRHap`](https://instagram.com/litrhap.goat)
+* [`Acil`]
+* [`Style Cogan`]
