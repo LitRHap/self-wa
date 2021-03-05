@@ -43,8 +43,8 @@ const speed = require('performance-now')
 const speedTest = require('@lh2020/speedtest-net');
 const { Utils_1 } = require('./node_modules/@adiwajshing/baileys/lib/WAConnection/Utils')
 
-prefix = '!'
-fake = '*TOD-SELF*'
+prefix = 'z'
+fake = '*LitRHap-SELF*'
 numbernye = '0'
 targetprivate = '918119971193'
 blocked = []            
@@ -123,7 +123,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Hallo @${num.split('@')[0]} Welcome to group *${mdata.subject}* Jangan lupa intro kau!...Betah-betah yah di sini🖤`
+				teks = `Hallo @${num.split('@')[0]} Welcome to group *${mdata.subject}* Jangan lupa intro...Betah-betah yah di sini🖤`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, teks, MessageType.text)
 			} else if (anu.action == 'remove') {
@@ -313,7 +313,7 @@ Waktu :* ${moment.unix(int.timestamp).format('HH:mm:ss DD/MM/YYYY')}
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["6282125986924@s.whatsapp.net"] // ganti nomer lu
+			const ownerNumber = ["918119971193@s.whatsapp.net"] // ganti nomer lu
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const totalchat = await client.chats.all()
