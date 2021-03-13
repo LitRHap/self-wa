@@ -88,7 +88,7 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code is ready`)
+   console.log(`[ ${time} ] scan oniichan`)
 })
 
 client.on('credentials-updated', () => {
@@ -286,8 +286,8 @@ Waktu :* ${moment.unix(int.timestamp).format('HH:mm:ss DD/MM/YYYY')}
 			const content = JSON.stringify(mek.message)
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
-			const barbarkey = 'Nkwp9oR7Eg9yyKbejBpm'
-			const vhtearkey = 'c1d162b46e634f389efa1ac715f03d03'
+			const barbarkey = 'APIKEY_LU'
+			const vhtearkey = 'APIKEY_LU'
 			const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
 			const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 			body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
@@ -297,18 +297,18 @@ Waktu :* ${moment.unix(int.timestamp).format('HH:mm:ss DD/MM/YYYY')}
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: '_Otewe Nyet_',
-				success: 'Berhasil!',
+				wait: 'chotto matte oniichan',
+				success: 'haik oniichan',
 				error: {
-					stick: 'Itu video gblk!',
+					stick: 'baka! ini video iniichan',
 					Iv: 'Linknya mokad:v'
 				},
 				only: {
-					group: 'Grup only bruh...',
-					ownerG: 'Owner grup only bruh...',
-					ownerB: 'Lu siapa?',
-					admin: 'Mimin grup only bruh...',
-					Badmin: 'Jadiin gw admin dlu su!'
+					group: 'cuman di group oniichan...',
+					ownerG: 'khusus owner group oniichan...',
+					ownerB: 'oniichan siapa?',
+					admin: 'baka! khusus admin group oniichan...',
+					Badmin: 'baka! bukan admin gimana mau command'
 				}
 			}
 
