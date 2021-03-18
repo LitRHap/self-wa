@@ -66,17 +66,11 @@ prefix = z
 |       ✅        |   Add Member Group	             |
 |       ✅        |   Get List Admins Group          |
 
-| Owner Bot  |                     Feature           |
-| :-----------: | :--------------------------------: |
-|       ✅        |   Set Prefix                     |
-|       ✅        |   Broadcast                      |
-|       ✅        |   Clear All Chats                |
-
 ### Special Thanks to
 * [`adiwajshing/Baileys`](https://github.com/adiwajshing/Baileys)
 * [`MitsuGans`](https://github.com/MitsuGans)
 * [`Kevin David`]
-* [`Bang Garena`]bang OTP nomor malay
+* [`Bang Garena`]
 * [`LitRHap`](https://instagram.com/litrhap.goat)
 * [`Acil`]
 * [`Style Cogan`]
