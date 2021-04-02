@@ -68,9 +68,6 @@ prefix = z
 
 ### Special Thanks to
 * [`adiwajshing/Baileys`](https://github.com/adiwajshing/Baileys)
+* [`MhankBarBar`] (https://github.com/MhankBarBar)
 * [`MitsuGans`](https://github.com/MitsuGans)
-* [`Kevin David`]
-* [`Bang Garena`]
 * [`LitRHap`](https://instagram.com/litrhap.goat)
-* [`Acil`]
-* [`Style Cogan`]
