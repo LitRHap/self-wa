@@ -66,6 +66,13 @@ prefix = z
 |       ✅        |   Add Member Group	             |
 |       ✅        |   Get List Admins Group          |
 
+### Ingfo kalo bot nya ga mau
+1.coba pakai baileys versi yang di bawah ini
+  npm i @adiwajshing/baileys@3.3.0
+  npm i @adiwajshing/baileys@4.3.0
+
+2.kalo masih ga mau tawakkal siapa tahu dapat skin eh hidayah 🗿
+
 ### Special Thanks to
 * [`adiwajshing/Baileys`](https://github.com/adiwajshing/Baileys)
 * [`MhankBarBar`](https://github.com/MhankBarBar)
