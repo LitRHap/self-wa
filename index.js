@@ -43,10 +43,10 @@ const speed = require('performance-now')
 const speedTest = require('@lh2020/speedtest-net');
 const { Utils_1 } = require('./node_modules/@adiwajshing/baileys/lib/WAConnection/Utils')
 
-prefix = 'z'
-fake = '*LitRHap-SELF*'
+prefix = '#'
+fake = '*Shuichi-SELF*'
 numbernye = '0'
-targetprivate = '918119971193'
+targetprivate = '6282130301023'
 blocked = []            
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
