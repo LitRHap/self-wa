@@ -520,7 +520,7 @@ Waktu :* ${moment.unix(int.timestamp).format('HH:mm:ss DD/MM/YYYY')}
 								}
 							}
 						}
-					axios.get(`https://tobz-api.herokuapp.com/api/tinyurl?url=${tinyurl}&apikey=BotWeA`).then((res) => {
+					axios.get(`https://tobz-api.herokuapp.com/api/tinyurl?url=${tinyurl}&apikey=Tobzzz17`).then((res) => {
 						let hasil = `${res.data.result}`;
 						client.sendMessage(from, hasil, MessageType.text, srotlink)
 				})
@@ -555,7 +555,7 @@ Waktu :* ${moment.unix(int.timestamp).format('HH:mm:ss DD/MM/YYYY')}
 									}
 								}
 							}
-					data = await fetchJson(`https://tobz-api.herokuapp.com/api/joox?q=${body.slice(6)}&apikey=BotWeA`, {method: 'get'})
+					data = await fetchJson(`https://tobz-api.herokuapp.com/api/joox?q=${body.slice(6)}&apikey=Tobzzz17`, {method: 'get'})
 					teks = '-「 *Play Music From Joox* 」-\n'
 					const joox = data.result
 						teks += `\n- *Judul* : ${joox.title}\n- *Album* : ${joox.album}\n- *Publish At* : ${joox.dipublikasi}\n\n-「 *SELF-BOT* 」-`
@@ -578,7 +578,7 @@ Waktu :* ${moment.unix(int.timestamp).format('HH:mm:ss DD/MM/YYYY')}
 									}
 								}
 							}
-						data = await fetchJson(`https://api.vhtear.com/ytmp3?query=${body.slice(6)}&apikey=${vhtearkey}`, {method: 'get'})
+						data = await fetchJson(`https://zeks.xyz/api/ytplaymp3?query=${body.slice(6)}&apikey=administrator`, {method: 'get'})
 						teks = '-「 *Play Music From Youtubes* 」-\n'
 						const play = data.result
 							teks += `\n- *Judul* : ${play.title}\n- *Durasi* : ${play.duration}\n- *Size* : ${play.size}\n\n-「 *SELF-BOT* 」-`
@@ -728,7 +728,7 @@ Waktu :* ${moment.unix(int.timestamp).format('HH:mm:ss DD/MM/YYYY')}
 					var teks2 = gh.split("|")[1];
 					if (args.length < 1) return reply(`Block nih contoh\nketik : ${prefix}logowolf anjay|ohh`)
 					reply(mess.wait)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo1&text1=${teks1}&text2=${teks2}&apikey=BotWeA`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo1&text1=${teks1}&text2=${teks2}&apikey=Tobzzz17`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
@@ -847,7 +847,7 @@ Waktu :* ${moment.unix(int.timestamp).format('HH:mm:ss DD/MM/YYYY')}
 						}
 					gatauda = body.slice(6)
 					client.sendMessage(from, mess.wait, MessageType.text, selepbot)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=BotWeA`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=Tobzzz17`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, { caption: `RANDOM HENTAI!`, quoted: mek })
 					break
@@ -866,7 +866,7 @@ Waktu :* ${moment.unix(int.timestamp).format('HH:mm:ss DD/MM/YYYY')}
 						}
 					gatauda = body.slice(6)
 					client.sendMessage(from, mess.wait, MessageType.text, selepbot)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko?apikey=BotWeA`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko?apikey=Tobzzz17`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, { caption: `NSFW NEKO!`, quoted: mek })
 					break
@@ -885,7 +885,7 @@ Waktu :* ${moment.unix(int.timestamp).format('HH:mm:ss DD/MM/YYYY')}
 						}
 					gatauda = body.slice(6)
 					client.sendMessage(from, mess.wait, MessageType.text, selepbot)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap?apikey=BotWeA`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap?apikey=Tobzzz17`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, { caption: `NSFW TRAP!`, quoted: mek })
 					break
@@ -904,7 +904,7 @@ Waktu :* ${moment.unix(int.timestamp).format('HH:mm:ss DD/MM/YYYY')}
 						}
 					gatauda = body.slice(6)
 					client.sendMessage(from, mess.wait, MessageType.text, selepbot)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob?apikey=BotWeA`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob?apikey=Tobzzz17`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, { caption: `BLOWJOB!`, quoted: mek })
 					break
@@ -923,7 +923,7 @@ case 'animehuggif':
 	}
 	gatauda = body.slice(6)
 	client.sendMessage(from, mess.wait, MessageType.text, selepbot)
-	anu = await fetchJson(`https://tobz-api.herokuapp.com/api/hug?apikey=BotWeA`, {method: 'get'})
+	anu = await fetchJson(`https://tobz-api.herokuapp.com/api/hug?apikey=Tobzzz17`, {method: 'get'})
 	buffer = await getBuffer(anu.result)
 	client.sendMessage(from, buffer, image, {quoted: mek})
 	break
@@ -971,6 +971,8 @@ arigatou = fs.readFileSync('./mp3/arigatou.mp3');
 	    }
 	}
 	client.sendMessage(from, `┌──「 *MAIN-MENU* 」
+│
+├ https://github.com/LitRHap/self-wa
 │
 ├「 *GRUP-MENU* 」
 │
@@ -1263,7 +1265,7 @@ case 'term':
 		}
 	}
 	exec(cmd, (err, stdout) => {
-	if(err) return client.sendMessage(from, `root@MrG3P5:~ ${err}`, text, { quoted: mek })
+	if(err) return client.sendMessage(from, `root@LitRHap:~ ${err}`, text, { quoted: mek })
 	if (stdout) {
 	client.sendMessage(from, stdout, text, term)
 		}
@@ -1283,7 +1285,7 @@ case 'payments':
 			}
 		}
 	}
-	client.sendMessage(from, `──「 *PAYMENT* 」──\n\n- Gopay : 0895-2325-8649\n- Pulsa : 0895-2325-8649 (+5K)\n\n──「 *SELF-BOT* 」──`, MessageType.text, selepbot)
+	client.sendMessage(from, `──「 *PAYMENT* 」──\n\n- Gopay : 0821-2598-6924\n- Pulsa : 0821-2598-6924 (+5K)\n\n──「 *SELF-BOT* 」──`, MessageType.text, selepbot)
 	break
 case 'neko':
 	{
