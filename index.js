@@ -27,7 +27,6 @@ const { donasi } = require('./lib/donasi')
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
-const tiktod = require('tiktok-scraper')
 const axios = require("axios")
 const ffmpeg = require('fluent-ffmpeg')
 const imageToBase64 = require('image-to-base64');
@@ -85,7 +84,8 @@ function speedText(speed) {
 const { exec } = require("child_process")
 
 const client = new WAConnection()
-
+client.logger.level = 'warn'
+client.version = [2, 2119, 6]
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
    console.log(`[ ${time} ] scan oniichan`)
