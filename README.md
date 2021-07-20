@@ -71,4 +71,4 @@ prefix = z
 * [`adiwajshing/Baileys`](https://github.com/adiwajshing/Baileys)
 * [`MhankBarBar`](https://github.com/MhankBarBar)
 * [`HiRyn`](https://github.com/HiRyn)
-* [`LitRHap`](https://instagram.com/litrhap.goat)
+* [`LitRHap`](https://instagram.com/alif._.t)
