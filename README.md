@@ -76,5 +76,5 @@ prefix = z
 ### Special Thanks to
 * [`adiwajshing/Baileys`](https://github.com/adiwajshing/Baileys)
 * [`MhankBarBar`](https://github.com/MhankBarBar)
-* [`MitsuGans`](https://github.com/MitsuGans)
+* [`HiRyn`](https://github.com/HiRyn)
 * [`LitRHap`](https://instagram.com/litrhap.goat)
