@@ -1,7 +1,7 @@
 {
-  "name": "AR15BOT",
+  "name": "self-wa",
   "version": "1.0.0",
-  "description": "Termux only",
+  "description": "Termux Whatsapp Bot",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -38,15 +38,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/A187ID/AR15BOT.git"
+    "url": "git+https://github.com/LitRHap/self-wa.git"
   },
   "keywords": [
     "k"
   ],
-  "author": "Abdul Muttaqin",
+  "author": "LitRHap",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/A187ID/AR15BOT/issues"
+    "url": "https://github.com/LitRHap/self-wa/issues"
   },
-  "homepage": "https://github.com/A187ID/AR15BOT/readme"
+  "homepage": "https://github.com/LitRHap/self-wa/readme"
 }
