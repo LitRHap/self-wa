@@ -27,7 +27,7 @@ you've just cloned!!
 
 ```bash
 > cd self-wa
-> npm i
+> bash install.sh
 ```
 
 ### Usage
