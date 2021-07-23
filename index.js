@@ -46,7 +46,8 @@ prefix = 'z'
 fake = '*LitRHap-SELF*'
 numbernye = '0'
 targetprivate = '918119971193'
-blocked = []            
+blocked = [] 
+selfmode = true
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
 
@@ -278,9 +279,9 @@ Waktu :* ${moment.unix(int.timestamp).format('HH:mm:ss DD/MM/YYYY')}
 
 	client.on('message-new', async (mek) => {
 		try {
-			if (!mek.message) return
-			if (mek.key && mek.key.remoteJid == 'status@broadcast') return
-			if (!mek.key.fromMe) return
+			
+		if (!mek.message) return
+		if (mek.key && mek.key.remoteJid == 'status@broadcast') return
 			global.prefix
 			global.blocked
 			const content = JSON.stringify(mek.message)
@@ -353,7 +354,27 @@ Waktu :* ${moment.unix(int.timestamp).format('HH:mm:ss DD/MM/YYYY')}
 			if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
 			if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
+			
+			if (!mek.key.fromMe && selfmode === true) return
+			
 			switch(command) {
+					
+					case 'public':
+          	if (!mek.key.fromMe) return fakereply('SELF-BOT')
+          	if (selfmode === false) return
+          	// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
+          	selfmode = false
+          	fakereply(`「 *PUBLIC-MODE* 」`)
+          	break
+	case 'self':
+          	if (!mek.key.fromMe) return fakereply('SELF-BOT')
+          	if (selfmode === true) return
+          	uptime = process.uptime()
+         	 // var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
+         	selfmode = true
+          	fakereply(`「 *SELF-MODE* 」`)
+          	break
+					
 				case 'hidetag1':
 				case 'hidetag':
 					members_id = []
