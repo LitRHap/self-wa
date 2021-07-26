@@ -343,9 +343,9 @@ Waktu :* ${moment.unix(int.timestamp).format('HH:mm:ss DD/MM/YYYY')}
 			const mentions = (teks, memberr, id) => {
 				(id == null || id == undefined || id == false) ? client.sendMessage(from, teks.trim(), extendedText, {contextInfo: {"mentionedJid": memberr}}) : client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": memberr}})
 			}
-			const fakereply = (teks) => {
+const fakereply = (teks) => {
 
- client.sendMessage(from, teks, text, {thumbnail:fs.readFileSync('./src/image.jpeg'), extendedText, quoted: m})
+ client.sendMessage(from, teks, text, {thumbnail:fs.readFileSync('./src/image/gura x ame.jpeg'), extendedText, quoted: mek})
 			}
 
 			colors = ['red','white','black','blue','yellow','green']
