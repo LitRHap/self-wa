@@ -590,29 +590,28 @@ const fakereply = (teks) => {
 					buffer = await getBuffer(joox.mp3)
 					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `${joox.title}.mp3`, quoted: mek})
 					break
-					case 'play':
-						var itsme = `${numbernye}@s.whatsapp.net`
-						var split = `𝙋𝙡𝙖𝙮 𝙎𝙤𝙣𝙜 𝙁𝙧𝙤𝙢 𝙔𝙤𝙪𝙩𝙪𝙗𝙚`
-						var selepbot = {
-						contextInfo: {
-						participant: itsme,
-						quotedMessage: {
-						extendedTextMessage: {
-						text: split,
-										}
-									}
-								}
-							}
-						data = await fetchJson(`https://zeks.xyz/api/ytplaymp3?query=${body.slice(6)}&apikey=administrator`, {method: 'get'})
-						teks = '-「 *Play Music From Youtubes* 」-\n'
-						const play = data.result
-							teks += `\n- *Judul* : ${play.title}\n- *Durasi* : ${play.duration}\n- *Size* : ${play.size}\n\n-「 *SELF-BOT* 」-`
-						thumb = await getBuffer(play.image)
-						client.sendMessage(from, mess.wait, MessageType.text, selepbot)
-						client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
-						buffer = await getBuffer(play.mp3)
-						client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `${play.title}.mp3`, quoted: mek})
-						break
+					    case 'play':
+			if (args.length === 0) return reply(`Kirim perintah *${prefix}play* _Judul lagu yang akan dicari_`)
+            var srch = args.join('')
+    		aramas = await yts(srch);
+    		aramat = aramas.all 
+   			var mulaikah = aramat[0].url							
+                  try {
+                    yta(mulaikah)
+                    .then((res) => {
+                        const { dl_link, thumb, title, filesizeF, filesize } = res
+                        axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+                        .then(async (a) => {
+                        if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam mektuk link_`)
+                        const captions = `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
+                        sendMediaURL(from, thumb, captions)
+                        await sendMediaURL(from, dl_link).catch(() => reply('error'))
+                        })                
+                        })
+                        } catch (err) {
+                        reply(mess.error.api)
+                        }
+                   break
 						case 'pinterest':
 							var itsme = `${numbernye}@s.whatsapp.net`
 							var split = `𝙎𝙚𝙖𝙧𝙘𝙝𝙞𝙣𝙜 𝙄𝙢𝙖𝙜𝙚 𝙁𝙧𝙤𝙢 𝙋𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩`
@@ -1807,6 +1806,9 @@ case 'ownergc':
 					}
 					break
 				default:
+if(budy.includes('@918119971193')){
+otomatis(kenapa ngetag owner ku?')
+}
 			if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
 						muehe = await simih(budy)
