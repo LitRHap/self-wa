@@ -1807,7 +1807,7 @@ case 'ownergc':
 					break
 				default:
 if(budy.includes('@918119971193')){
-otomatis(kenapa ngetag owner ku?')
+otomatis('kenapa ngetag owner ku?')
 }
 			if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
