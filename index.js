@@ -86,7 +86,7 @@ const { exec } = require("child_process")
 
 const client = new WAConnection()
 client.logger.level = 'warn'
-client.version = [2, 2119, 6]
+client.version = [2, 2140, 12]
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
    console.log(`[ ${time} ] scan oniichan`)
